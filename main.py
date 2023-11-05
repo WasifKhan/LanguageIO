@@ -1,10 +1,17 @@
-from extract_data import Extract_Data
-from models import Model 
+from utils.data_processor import DataProcessor
+from utils.regressor import Model 
+
+FILENAME = 'data/raw_data.csv'
 
 if __name__ == "__main__":
-    data = Extract_Data('raw_data.csv')
-    linear_regression = Model('Linear Regression', data)
-    lasso_regression = Model('Lasso Regression', data)
-    decision_tree = Model('Decision Tree Regression', data)
+    data = DataProcessor(FILENAME)
+    models = ['Linear Regression', 'Lasso Regression', 'Decision Tree Regression']
+    
+    for model in models:
+        regressor = Model(model)
+        regressor.fit(data.x_train, data.y_train)
+        regressor.predict(data.x_test, data.y_test)
+
+
 
         
