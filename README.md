@@ -12,8 +12,8 @@
 ## Analysis
 
 ### Data
-* POS and Part Of Speech are duplicates, only need 1 of these columns 
-* num_words does not belong in this dataset. Also all entries are 1 so doesn't affect result
+* *POS* and *Part Of Speech* are duplicates, only need 1 of these columns 
+* *num_words* does not belong in this dataset. Also all entries are 1 so doesn't affect result
 * Line 30: fillna should be replaced with dropna
 * To reduce bias, consider nouns and pronouns as idential part of speech
 
