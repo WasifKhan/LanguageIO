@@ -18,6 +18,7 @@ class Model:
     def fit(self, x_train, y_train):
         self.regressor.fit(x_train, y_train)
 
+
     def predict(self, x_test, y_test):
         prediction = self.regressor.predict(x_test)
         score = r2_score(prediction, y_test)
