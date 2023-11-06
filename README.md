@@ -17,6 +17,11 @@
 * *num_words* does not belong in this dataset. Also all entries are 1 so doesn't affect result
 * *fillna* should be replaced with *dropna* given low cardinality for columns
 * To reduce bias, consider nouns and pronouns as idential part of speech
+* No correlation between dates columns and mistranslation probability so we omit these, some correlations are provided below
+![date1](https://github.com/WasifKhan/LanguageIO/blob/master/images/date1.png)
+![date2](https://github.com/WasifKhan/LanguageIO/blob/master/images/date2.png)
+![date3](https://github.com/WasifKhan/LanguageIO/blob/master/images/date3.png)
+![date4](https://github.com/WasifKhan/LanguageIO/blob/master/images/date4.png)
 
 ## Possible Reasons for Bad Prediction
 * Data needs to be split into train/test data. High accuracy is a result of testing on same data model was trained with
