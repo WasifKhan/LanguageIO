@@ -28,6 +28,7 @@
 
 ## Possible Reasons for Bad Prediction
 * Data needs to be split into train/test data. High accuracy is a result of testing on same data model was trained with
+* Low bias, high variance. The model is overfitting with unnecessary dimensions
 * Not enough data points/too many columns. VC-dimension calculation shows that 5 dimensions require ~100 datapoints for *p-value < 0.05*
 
 ## Improvements In Provided Code
