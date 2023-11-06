@@ -10,7 +10,7 @@
 
 ## Visuals
 ### Linear Regression
-![Linear Regression](http://url/to/img.png)](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
+![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
 ### Lasso Regression
 ![Lasso Regression](http://url/to/img.png)](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
 ### Decision Tree Regressor
