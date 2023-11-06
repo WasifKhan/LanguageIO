@@ -12,8 +12,10 @@
 ### Linear Regression
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
 ### Lasso Regression
-![Lasso Regression](http://url/to/img.png)](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
+https://github.com/WasifKhan/LanguageIO/blob/master/images/lasso.png
+![Lasso Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/lasso.png)
 ### Decision Tree Regressor
+![Decision Tree Regressor](https://github.com/WasifKhan/LanguageIO/blob/master/images/decision.png)
 
 ## Analysis
 ### Data
