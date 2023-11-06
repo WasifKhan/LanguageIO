@@ -18,7 +18,7 @@
 * *num_words* does not belong in this dataset. Also all entries are 1 so doesn't effect result
 * *fillna* should be replaced with *dropna* given low cardinality for columns
 * To reduce bias, consider nouns and pronouns as idential part of speech
-* No correlation between dates columns and mistranslation probability so we omit these, some correlations are provided below
+* No correlation between dates columns and mistranslation probability so we omit these, some correlations:
 ![date1](https://github.com/WasifKhan/LanguageIO/blob/master/images/date1.png)
 ![date2](https://github.com/WasifKhan/LanguageIO/blob/master/images/date2.png)
 ![date3](https://github.com/WasifKhan/LanguageIO/blob/master/images/date3.png)
