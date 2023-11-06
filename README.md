@@ -8,9 +8,14 @@
 * utils - Contains a data processing file and model file
 * data - contains *raw_data.csv*
 
+## Visuals
+### Linear Regression
+![Linear Regression](http://url/to/img.png)](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
+### Lasso Regression
+![Lasso Regression](http://url/to/img.png)](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
+### Decision Tree Regressor
 
 ## Analysis
-
 ### Data
 * *POS* and *Part Of Speech* are duplicates, only need 1 of these columns 
 * *num_words* does not belong in this dataset. Also all entries are 1 so doesn't affect result
