@@ -5,11 +5,11 @@
 * Run *main.py* using Python3.10 +
 
 ## Visual Results
-#### **Accuracy: 89%**
+#### **Linear Regression Accuracy: 89%**
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
-#### **Accuracy: 87%**
+#### **Lasso Regression Accuracy: 87%**
 ![Lasso Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/lasso.png)
-#### **Accuracy: 82%**
+#### **Decision Tree Regressor Accuracy: 82%**
 ![Decision Tree Regressor](https://github.com/WasifKhan/LanguageIO/blob/master/images/decision.png)
 
 ## Data Exploration
