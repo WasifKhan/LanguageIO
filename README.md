@@ -5,12 +5,12 @@
 * Run *main.py* using Python3.10 +
 
 ## Visual Results
+#### **Accuracy: 89%**
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
-**Accuracy: 89%**
+#### **Accuracy: 87%**
 ![Lasso Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/lasso.png)
-**Accuracy: 87%**
+#### **Accuracy: 82%**
 ![Decision Tree Regressor](https://github.com/WasifKhan/LanguageIO/blob/master/images/decision.png)
-**Accuracy: 82%**
 
 ## Data Exploration
 * *POS* and *Part Of Speech* are duplicates, only need 1 of these columns 
