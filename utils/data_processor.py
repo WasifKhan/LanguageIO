@@ -32,5 +32,5 @@ class DataProcessor:
 
     def _split_data(self):
         self.x_train, self.x_test, self.y_train, self.y_test = \
-                train_test_split(self.x_data, self.y_data, test_size=0.2)
+                train_test_split(self.x_data, self.y_data, test_size=0.4)
                 

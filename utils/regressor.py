@@ -1,3 +1,4 @@
+from numpy import array, polyfit
 from sklearn.linear_model import LinearRegression, Lasso
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
@@ -9,7 +10,7 @@ class Model:
         if model == 'Linear Regression':
             self.regressor = LinearRegression()
         elif model == 'Lasso Regression':
-            self.regressor = Lasso(0.001)
+            self.regressor = Lasso(0.01)
         elif model == 'Decision Tree Regression':
             self.regressor = DecisionTreeRegressor()
         else:
@@ -30,6 +31,11 @@ class Model:
         plt.title(f'{self.name}')
         plt.xlabel('Actual')
         plt.ylabel('Predicted')
-        plt.scatter(y_test, self.prediction, color='g')
-        plt.show()
 
+        plt.scatter(y_test, self.prediction, color='g')
+        y_test = array(y_test).squeeze()
+        pred = array(self.prediction).squeeze()
+        a, b = polyfit(y_test, pred, 1)
+        plt.plot(y_test, a*y_test+b)
+        plt.show()
+    
