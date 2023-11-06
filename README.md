@@ -12,7 +12,7 @@
 ## Data Exploration
 * *POS* and *Part Of Speech* are duplicates, only need 1 of these columns 
 * *num_words* does not belong in this dataset. Also all entries are 1 so doesn't affect result
-* Line 30: fillna should be replaced with dropna
+* *fillna* should be replaced with *dropna* given low cardinality for columns
 * To reduce bias, consider nouns and pronouns as idential part of speech
 
 ## Possible Reasons for Bad Prediction
