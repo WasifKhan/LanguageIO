@@ -5,7 +5,7 @@
 * Required libraries: numpy, pandas, matplotlib, sklearn
 * Run *main.py* using Python3.10 +
 
-## Visual Results
+## Results
 #### **Linear Regression Accuracy: 89%**
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
 #### **Lasso Regression Accuracy: 87%**
@@ -14,7 +14,10 @@
 ![Decision Tree Regressor](https://github.com/WasifKhan/LanguageIO/blob/master/images/decision.png)
 
 ## Data Exploration
-* *POS* and *Part Of Speech* are duplicates, only need 1 of these columns 
+* Meaningful dimensions are: Length, is_stopword and part of speech
+* Source_client was included in model as there is *moderate* relationship with mistranslation probability
+![Source v target](https://github.com/WasifKhan/LanguageIO/blob/master/images/source_client%20v%20target.png)
+* *POS* and *Part Of Speech* are duplicates, only need 1 of these columns
 * *num_words* does not belong in this dataset. Also all entries are 1 so doesn't effect result
 * *fillna* should be replaced with *dropna* given low cardinality for columns
 * To reduce bias, consider nouns and pronouns as idential part of speech
@@ -38,6 +41,3 @@
 * Line 42, 47, 54: Use f-strings for printing
 * Line 43: Import Lasso directly
 * Line 51: Imports should be at beginning of file 
-
-## Next Steps
-* Have 1 column "Date Entered" with numeric values that merge all the *date_added_to_system_is_X* columns
