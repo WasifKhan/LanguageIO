@@ -20,7 +20,7 @@
 * *POS* and *Part Of Speech* are duplicates, only need 1 of these columns
 * *num_words* does not belong in this dataset. Also all entries are 1 so doesn't effect result
 * *fillna* should be replaced with *dropna* given low cardinality for columns
-* To reduce bias, consider nouns and pronouns as idential part of speech
+* To reduce variance, consider nouns and pronouns as idential part of speech
 * No correlation between dates columns and mistranslation probability so we omit these, some examples:
 ![date1](https://github.com/WasifKhan/LanguageIO/blob/master/images/date1.png)
 ![date2](https://github.com/WasifKhan/LanguageIO/blob/master/images/date2.png)
