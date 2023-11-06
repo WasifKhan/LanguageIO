@@ -38,4 +38,3 @@
 
 ## Next Steps
 * Have 1 column "Date Entered" with numeric values that merge all the *date_added_to_system_is_X* columns
-* Find correlation between all columns and target output to see which ones are most relevant
