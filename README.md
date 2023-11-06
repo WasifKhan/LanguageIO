@@ -4,10 +4,6 @@
 * Clone this repository
 * Run *main.py* using Python3.10 +
 
-## Directory Structure
-* utils - Contains a data processing file and model file
-* data - contains *raw_data.csv*
-
 ## Visual Results
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
 ![Lasso Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/lasso.png)
@@ -16,11 +12,11 @@
 ## Data Exploration
 * *POS* and *Part Of Speech* are duplicates, only need 1 of these columns 
 * *num_words* does not belong in this dataset. Also all entries are 1 so doesn't affect result
-* Line 30: fillna should be replaced with dropna
+* *fillna* should be replaced with *dropna* given low cardinality for columns
 * To reduce bias, consider nouns and pronouns as idential part of speech
 
 ## Possible Reasons for Bad Prediction
-* Data needs to be split into train/test data. High accuracy is a result of not splitting data
+* Data needs to be split into train/test data. High accuracy is a result of testing on same data model was trained with
 
 ## Improvements In Provided Code
 * Line 7: Import only what is needed, not entire library
