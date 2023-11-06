@@ -23,6 +23,8 @@
 ![date2](https://github.com/WasifKhan/LanguageIO/blob/master/images/date2.png)
 ![date3](https://github.com/WasifKhan/LanguageIO/blob/master/images/date3.png)
 ![date4](https://github.com/WasifKhan/LanguageIO/blob/master/images/date4.png)
+* Aggregating dates into 1 column still doesn't provide any meaningful relationship between mistranslation probability
+![date4](https://github.com/WasifKhan/LanguageIO/blob/master/images/date%20added%20to%20system.png)
 
 ## Possible Reasons for Bad Prediction
 * Data needs to be split into train/test data. High accuracy is a result of testing on same data model was trained with
