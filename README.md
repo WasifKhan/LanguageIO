@@ -4,10 +4,6 @@
 * Clone this repository
 * Run *main.py* using Python3.10 +
 
-## Directory Structure
-* utils - Contains a data processing file and model file
-* data - contains *raw_data.csv*
-
 ## Visual Results
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
 ![Lasso Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/lasso.png)
