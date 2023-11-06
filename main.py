@@ -5,7 +5,7 @@ FILENAME = 'data/raw_data.csv'
 
 if __name__ == "__main__":
     data = DataProcessor(FILENAME)
-    models = ['Linear Regression', 'Lasso Regression', 'Decision Tree Regression']
+    models = ['Linear Regression', 'Lasso Regression', 'Decision Tree Regressor']
     
     for model in models:
         regressor = Model(model)

@@ -11,7 +11,7 @@ class Model:
             self.regressor = LinearRegression()
         elif model == 'Lasso Regression':
             self.regressor = Lasso(0.01)
-        elif model == 'Decision Tree Regression':
+        elif model == 'Decision Tree Regressor':
             self.regressor = DecisionTreeRegressor()
         else:
             raise TypeError('Incorrect Model Specified') 

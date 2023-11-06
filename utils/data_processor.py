@@ -1,14 +1,31 @@
 from pandas import read_csv
 from sklearn.model_selection import train_test_split
 
+
 class DataProcessor:
     x_columns = ['length', 'source_client', 'is stopword', 'part of speech']
     y_column = ['mistranslation probability']
     def __init__(self, filename):
         data = read_csv(filename)
+        # self._explore_data(data)
         self._prepare_data(data)
         self._encode_features()
         self._split_data()
+
+
+    def _explore_data(self, data):
+        from matplotlib import pyplot as plt
+        from numpy import corrcoef
+        target = data['mistranslation probability']
+        for col in data:
+            if col[0:4] == 'date':
+                data[col].replace({'TRUE':1, 'FALSE':0})
+                corr = corrcoef(data[col], target)
+                plt.title(f'{col}')
+                plt.xlabel('Column Value')
+                plt.ylabel('Target')
+                plt.scatter(data[col], target)
+                plt.show()
 
 
     def _prepare_data(self, data):

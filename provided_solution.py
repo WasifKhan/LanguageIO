@@ -7,7 +7,7 @@ from sklearn.metrics import r2_score
 import sklearn as skl
 
 if __name__ == "__main__":
-    df = pd.read_csv('raw_data.csv')
+    df = pd.read_csv('data/raw_data.csv')
 
     for a in df:
         bad = False
