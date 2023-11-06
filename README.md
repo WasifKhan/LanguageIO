@@ -20,7 +20,7 @@
 * To reduce bias, consider nouns and pronouns as idential part of speech
 
 ## Possible Reasons for Bad Prediction
-* Data needs to be split into train/test data. High accuracy is a result of not splitting data
+* Data needs to be split into train/test data. High accuracy is a result of testing on same data model was trained with
 
 ## Improvements In Provided Code
 * Line 7: Import only what is needed, not entire library
