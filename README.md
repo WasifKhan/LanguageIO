@@ -9,11 +9,8 @@
 * data - contains *raw_data.csv*
 
 ## Visuals
-### Linear Regression
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
-### Lasso Regression
 ![Lasso Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/lasso.png)
-### Decision Tree Regressor
 ![Decision Tree Regressor](https://github.com/WasifKhan/LanguageIO/blob/master/images/decision.png)
 
 ## Analysis
