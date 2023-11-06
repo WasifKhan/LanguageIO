@@ -26,6 +26,7 @@
 
 ## Possible Reasons for Bad Prediction
 * Data needs to be split into train/test data. High accuracy is a result of testing on same data model was trained with
+* Not enough data points/too many columns. Need to reduce the number of columns or increase the number of datapoints.
 
 ## Improvements In Provided Code
 * Line 7: Import only what is needed, not entire library
