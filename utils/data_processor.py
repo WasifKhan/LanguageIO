@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 
 
 class DataProcessor:
-    x_columns = ['length', 'source_client', 'is stopword', 'part of speech']
+    x_columns = ['length', 'source_client', 'is stopword', 'part of speech', 'date_added_to_system']
     y_column = ['mistranslation probability']
     def __init__(self, filename):
         data = read_csv(filename)
@@ -17,6 +17,7 @@ class DataProcessor:
         from matplotlib import pyplot as plt
         from numpy import corrcoef
         target = data['mistranslation probability']
+        '''
         for col in data:
             if col[0:4] == 'date':
                 data[col].replace({'TRUE':1, 'FALSE':0})
@@ -26,9 +27,24 @@ class DataProcessor:
                 plt.ylabel('Target')
                 plt.scatter(data[col], target)
                 plt.show()
-
+        date_columns = [col for col in data.columns if col.startswith('date_added_to_system_is_')]
+        data['date_added_to_system'] = data[date_columns].idxmax(axis=1)
+        data['date_added_to_system'] = data['date_added_to_system'].str.extract('(\d+)').astype(int)
+        plt.figure(figsize=(10, 6))
+        plt.scatter(data['date_added_to_system'], data['mistranslation probability'], alpha=0.5)
+        plt.title('Date Added to System vs. Mistranslation Probability')
+        plt.xlabel('Date Added to System')
+        plt.ylabel('Mistranslation Probability')
+        plt.grid(True)
+        plt.show()
+        '''
+    
 
     def _prepare_data(self, data):
+        date_columns = [col for col in data.columns if col.startswith('date_added_to_system_is_')]
+        data['date_added_to_system'] = data[date_columns].idxmax(axis=1)
+        data['date_added_to_system'] = data['date_added_to_system'].str.extract('(\d+)').astype(int)
+
         data = data.filter(DataProcessor.x_columns + DataProcessor.y_column)
         data = data.dropna()
         self.x_data = data.filter(DataProcessor.x_columns)
