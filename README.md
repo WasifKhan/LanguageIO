@@ -38,6 +38,3 @@
 * Line 42, 47, 54: Use f-strings for printing
 * Line 43: Import Lasso directly
 * Line 51: Imports should be at beginning of file 
-
-## Next Steps
-* Have 1 column "Date Entered" with numeric values that merge all the *date_added_to_system_is_X* columns
