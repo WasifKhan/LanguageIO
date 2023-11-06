@@ -26,7 +26,7 @@
 ![date2](https://github.com/WasifKhan/LanguageIO/blob/master/images/date2.png)
 ![date3](https://github.com/WasifKhan/LanguageIO/blob/master/images/date3.png)
 ![date4](https://github.com/WasifKhan/LanguageIO/blob/master/images/date4.png)
-* Aggregating dates into 1 column still doesn't provide any meaningful relationship between mistranslation probability
+* Aggregating dates into 1 column still doesn't provide any meaningful relationship with mistranslation probability
 ![date4](https://github.com/WasifKhan/LanguageIO/blob/master/images/date%20added%20to%20system.png)
 
 ## Possible Reasons for Bad Prediction
