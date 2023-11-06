@@ -8,7 +8,7 @@
 * utils - Contains a data processing file and model file
 * data - contains *raw_data.csv*
 
-## Visuals
+## Visual Results
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
 ![Lasso Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/lasso.png)
 ![Decision Tree Regressor](https://github.com/WasifKhan/LanguageIO/blob/master/images/decision.png)
