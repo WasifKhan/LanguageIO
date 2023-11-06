@@ -6,8 +6,11 @@
 
 ## Visual Results
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
+* **Accuracy: 89%**
 ![Lasso Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/lasso.png)
+* **Accuracy: 87%**
 ![Decision Tree Regressor](https://github.com/WasifKhan/LanguageIO/blob/master/images/decision.png)
+* **Accuracy: 82%**
 
 ## Data Exploration
 * *POS* and *Part Of Speech* are duplicates, only need 1 of these columns 
