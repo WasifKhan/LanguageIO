@@ -5,7 +5,7 @@
 * Required libraries: numpy, pandas, matplotlib, sklearn
 * Run *main.py* using Python3.10 +
 
-## Visual Results
+## Results
 #### **Linear Regression Accuracy: 89%**
 ![Linear Regression](https://github.com/WasifKhan/LanguageIO/blob/master/images/linreg.png)
 #### **Lasso Regression Accuracy: 87%**
