@@ -2,6 +2,7 @@
 
 ## How To Run
 * Clone this repository
+* Required libraries: numpy, pandas, matplotlib, sklearn
 * Run *main.py* using Python3.10 +
 
 ## Visual Results
