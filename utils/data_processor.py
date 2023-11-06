@@ -17,7 +17,6 @@ class DataProcessor:
         from matplotlib import pyplot as plt
         from numpy import corrcoef
         target = data['mistranslation probability']
-        '''
         for col in data:
             if col[0:4] == 'date':
                 data[col].replace({'TRUE':1, 'FALSE':0})
@@ -37,7 +36,6 @@ class DataProcessor:
         plt.ylabel('Mistranslation Probability')
         plt.grid(True)
         plt.show()
-        '''
     
 
     def _prepare_data(self, data):
