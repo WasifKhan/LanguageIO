@@ -1,6 +1,7 @@
 from sklearn.linear_model import LinearRegression, Lasso
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
+from matplotlib import pyplot as plt
 
 class Model:
     def __init__(self, model):
@@ -20,7 +21,15 @@ class Model:
 
 
     def predict(self, x_test, y_test):
-        prediction = self.regressor.predict(x_test)
-        score = r2_score(prediction, y_test)
+        self.prediction = self.regressor.predict(x_test)
+        score = r2_score(self.prediction, y_test)
         print(f'{self.name} accuracy: {score}')
+
+    
+    def display(self, y_test):
+        plt.title(f'{self.name}')
+        plt.xlabel('Actual')
+        plt.ylabel('Predicted')
+        plt.scatter(y_test, self.prediction, color='g')
+        plt.show()
 

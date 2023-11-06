@@ -11,7 +11,7 @@ if __name__ == "__main__":
         regressor = Model(model)
         regressor.fit(data.x_train, data.y_train)
         regressor.predict(data.x_test, data.y_test)
-
+        regressor.display(data.y_test)
 
 
         
